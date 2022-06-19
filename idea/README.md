@@ -15,56 +15,11 @@ and hence the patients will not have to go about the hospitals with an entire me
 2. [Rishita Shaw](http://github.com/theseregrets)
 
 
-## Objective
+## How our idea is unique?![image](https://user-images.githubusercontent.com/87559560/174490186-2db4669c-7e79-4e04-951b-eaf8c4cc6911.png)
+ 
+Unless concerns about privacy and security that relate to patient information are addressed, it can cause there to be relatively low EMR adoption by a number of health institutions. AthenaMR, a web-based framework enables FIDO2 via simple API calls across all supported browsers and platforms on billions of devices consumers use every day. FIDO2 cryptographic login credentials are unique across every website, biometrics or other secrets like passwords never leave the user’s device and are never stored on a server. This security model eliminates the risks of phishing, all forms of password theft, and replay attacks. Because FIDO keys are unique for each Internet site and each user, they cannot be used to track you across sites hence ensuring the highest level of privacy.​ Hence there is no way an attacker can remotely access the account without physically accessing the card.​ In addition, the implementation is extremely seamless. Patients can easily generate temporary NFC tags for patients via the online portal. Moreover, the platform provides a centralized system for medical record maintenance for everyone. It guarantees easy record maintenance and hence the patients will not have to go about the hospital with an entire medical file.
 
-Users willing to use this service can buy a FIDO2 supported physical security key with USB and NFC
-capabilities. Then register on our website to generate a unique username and register the FIDO2 key
-along with it. The user portal contains the option to view and upload the medical reports. It is to be
-noted that there is no way to delete already added reports. This is to prevent misguidance. There is
-also an option to register a temporary token for authentication. This temporary token would be just an
-NFC card which can be kept in the hospital files. The user must set an expiry date for the NFC card
-after which it will be automatically disabled. A hospital while admitting a patient can request the
-patient to register the smart card which can be kept in the hospital files so that the doctors can access
-the patient records and add new reports after medical tests.
-**The user has the option to disable the registered temporary tokens on discharge from the hospital to
-prevent data misuse, and if not disabled manually, it will be automatically disabled when the
-stipulated time has passed.**
+![image](https://user-images.githubusercontent.com/87559560/174490196-5d74400d-e877-4afc-9065-af8cc629f74d.png)
 
-## Features
 
-The website will have two versions:
 
-1. User version: This has the option to view records, add records, register and remove temporary
-   tokens and register new FIDO2 keys.
-2. Hospital version: This has only the options to view and add records. The hospital will not be
-   authorized to manage tokens and keys. It is to be noted that the hospital can login only with
-   temporary tokens.
-3. For medical equipments: We provide an API endpoint with which medical devices and softwares 
-   will be able to directly upload the report against an user. It is to be noted that the medical 
-   equipments should preferably be interfaced with a NFC reader as the API endpoint authenticates 
-   the device with it only. API Documentation [here](./apidoc.md)
-
-## Tech Stacks
-```bash
-Technologies to be used:
-• FIDO2 Specifications
-• Web NFC
-• Microsoft Azure.
-```
-## FAQ
-
-FAQ:
-
-1. What if the user loses the FIDO2 key? – She can login via Email OTP to assign new FIDO2
-   key.
-2. When the user is sick how can she login? – Since FIDO2 is a Passwordless technology, the
-   family members of the user can use the security key.
-3. What are the system requirements for the user? – Any android phone with Google Chrome
-   89+ and NFC reader.
-4. What are the system requirements for the hospital? – Android device with Google Chrome
-   89+ and NFC reader. However, it is inconvenient for the hospital to use phone so any
-   computer with NFC reader is supposed to work. Some laptops have NFC readers inbuilt, as
-   well as USB NFC readers are available.
-5. How will the reports be stored? – The reports will be stored as uploaded by the hospital in any
-   file. We are intentionally not enforcing any file format as some medical records need to be
-   stored as PDF, while some like the medical scans are stored as DICOM or other formats.
